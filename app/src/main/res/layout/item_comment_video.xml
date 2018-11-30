@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <variable
+            name="commentViewModel"
+            type="com.ntduc.englishconversation.data.model.Comment"
+            />
+        <variable
+            name="listener"
+            type="com.ntduc.englishconversation.screen.timeline.OnTimelineItemTouchListener"
+            />
+    </data>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include
+            layout="@layout/item_comment_only_text"
+            android:id="@+id/layout_user"
+            app:commentViewModel="@{commentViewModel}"
+            app:listener="@{listener}"
+            />
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_56"
+            android:layout_marginStart="@dimen/dp_56"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_user"
+            app:resize_mode="fixed_height"
+            app:use_controller="false"
+            />
+    </android.support.constraint.ConstraintLayout>
+</layout>

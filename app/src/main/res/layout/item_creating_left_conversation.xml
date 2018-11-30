@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.ntduc.englishconversation.utils.Utils" />
+
+        <variable
+            name="conversations"
+            type="com.ntduc.englishconversation.data.model.ConversationModel" />
+
+        <variable
+            name="position"
+            type="int" />
+
+        <variable
+            name="viewModel"
+            type="com.ntduc.englishconversation.screen.basePost.BasePostViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_56">
+
+        <ImageView
+            android:id="@+id/image_recording_audio"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:background="@drawable/bg_menu_media_creating_conversation"
+            android:contentDescription="@string/description_recording_audio_convention"
+            android:onClick="@{(v) -> viewModel.showMenu(v, position, conversations)}"
+            android:padding="@dimen/dp_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_more_vert" />
+
+        <EditText
+            android:id="@+id/edit_conversation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_marginStart="@dimen/dp_4"
+            android:background="@drawable/bg_recording_audio_layout"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_create_conversation"
+            android:minHeight="@dimen/dp_48"
+            android:padding="@dimen/dp_4"
+            android:text="@={conversations.content}"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@id/image_recording_audio"
+            bind:onTouchListen="@{viewModel.getTouchListener(position)}" />
+
+        <TextView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:background="@drawable/bg_recording_audio_layout"
+            android:contentDescription="@string/description_delete_conversation"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:onClick="@{() -> viewModel.onDeleteConversationClick(position)}"
+            android:padding="@dimen/dp_4"
+            android:text="@{Utils.getFormatTimeFile(conversations.mediaModel.url)}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:contentDescription="@string/description_transform_content_conversation"
+            android:onClick="@{() -> viewModel.onGravityChangeClick(conversations, position)}"
+            android:padding="@dimen/dp_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_transform_content_conversation" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,46 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="viewModel"
+            type="com.ntduc.englishconversation.screen.basePost.BasePostViewModel"/>
+        <variable
+            name="mediaModel"
+            type="com.ntduc.englishconversation.data.model.MediaModel"
+            />
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_350"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginStart="@dimen/dp_8"
+            bind:player="@{viewModel.exoPlayer}"
+            android:layout_marginTop="@dimen/dp_12"
+            bind:layout_constraintBottom_toBottomOf="parent"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:onClick="@{()-> viewModel.onDeleteItemMediaClicked(mediaModel)}"
+            android:id="@+id/image_close"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintTop_toTopOf="parent"
+            bind:srcCompat="@drawable/com_facebook_close"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

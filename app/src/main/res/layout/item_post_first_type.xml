@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="java.util.List"/>
+
+        <import type="com.ntduc.englishconversation.data.model.MediaModel"/>
+
+        <variable
+            name="listData"
+            type="java.util.List&lt;com.ntduc.englishconversation.data.model.MediaModel&gt;"
+            />
+
+        <variable
+            name="listener"
+            type="com.ntduc.englishconversation.screen.imagedetail.OnMediaModelItemTouchListener"
+            />
+    </data>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_300"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_8"
+        android:contentDescription="@string/description_image_posted"
+        android:onClick="@{()->listener.onTouchListener(listData,0)}"
+        android:orientation="horizontal"
+        bind:imageUrl="@{listData[0].url}"
+        />
+
+</layout>

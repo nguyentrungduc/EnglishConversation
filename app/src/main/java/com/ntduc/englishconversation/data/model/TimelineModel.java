@@ -17,9 +17,7 @@ import java.util.List;
 import static com.ntduc.englishconversation.data.model.TimelineModel.Flag.EDITOR_CHOISE;
 import static com.ntduc.englishconversation.data.model.TimelineModel.Flag.NOMARL;
 
-/**
- * Created by framgia on 16/05/2017.
- */
+
 
 public class TimelineModel extends BaseObservable implements Parcelable, Cloneable {
 

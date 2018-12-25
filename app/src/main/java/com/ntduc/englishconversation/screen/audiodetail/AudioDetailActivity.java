@@ -1,4 +1,4 @@
-package com.ntduc.englishconversation.screen.audiodetail;
+﻿package com.ntduc.englishconversation.screen.audiodetail;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,11 +15,7 @@ import com.ntduc.englishconversation.utils.Constant;
 
 import static com.ntduc.englishconversation.utils.Constant.EXTRA_USER;
 
-/**
- * Created by fs-sournary.
- * Date on 12/19/17.
- * Description: audio detail screen
- */
+
 
 public class AudioDetailActivity extends BaseActivity {
 

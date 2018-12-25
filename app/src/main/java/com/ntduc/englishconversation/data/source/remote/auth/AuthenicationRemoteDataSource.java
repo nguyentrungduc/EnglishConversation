@@ -20,9 +20,6 @@ import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.ntduc.englishconversation.data.source.callback.DataCallback;
 
-/**
- * Created by framgia on 10/05/2017.
- */
 
 public class AuthenicationRemoteDataSource extends BaseAuthRemoteDataSource
         implements AuthenicationDataSource.RemoteDataSource {

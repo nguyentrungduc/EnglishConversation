@@ -14,9 +14,6 @@ import com.ntduc.englishconversation.screen.main.MainActivity;
 import com.ntduc.englishconversation.utils.navigator.Navigator;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-/**
- * Created by doan.van.toan on 1/16/18.
- */
 
 public class SettingViewModel extends BaseObservable implements SettingContract.ViewModel {
     private SettingContract.Presenter mPresenter;

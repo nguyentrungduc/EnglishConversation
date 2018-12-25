@@ -13,10 +13,6 @@ import com.google.firebase.auth.GoogleAuthProvider;
 
 import java.util.List;
 
-/**
- * Created by doan.van.toan on 1/16/18.
- */
-
 public class SettingPresenter implements SettingContract.Presenter {
 
     private AuthenicationRepository mAuthenicationRepository;

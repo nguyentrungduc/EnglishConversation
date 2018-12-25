@@ -10,9 +10,7 @@ import com.ntduc.englishconversation.data.source.remote.timeline.TimelineReposit
 import com.ntduc.englishconversation.screen.timeline.TimelineContract;
 import com.ntduc.englishconversation.screen.timeline.TimelineFragment;
 
-/**
- * Created by doan.van.toan on 2/8/18.
- */
+
 
 public class HomeTimelineFragment extends TimelineFragment {
 

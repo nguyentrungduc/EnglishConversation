@@ -15,9 +15,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 
-/**
- * Created by doan.van.toan on 2/8/18.
- */
 
 public class EditorChoiseTimelinePresenter extends TimelinePresenter {
 

@@ -3,11 +3,7 @@ package com.ntduc.englishconversation.screen.audiodetail;
 import com.ntduc.englishconversation.BasePresenter;
 import com.ntduc.englishconversation.BaseViewModel;
 
-/**
- * Created by fs-sournary.
- * Date on 12/19/17.
- * Description:
- */
+
 
 public interface AudioDetailContract {
 

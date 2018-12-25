@@ -9,9 +9,6 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.auth.FirebaseUser;
 import com.ntduc.englishconversation.data.source.callback.DataCallback;
 
-/**
- * Created by framgia on 10/05/2017.
- */
 
 public class AuthenicationRepository {
     private AuthenicationDataSource.RemoteDataSource mRemoteDataSource;

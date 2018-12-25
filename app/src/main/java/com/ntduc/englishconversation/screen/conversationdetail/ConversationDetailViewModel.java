@@ -1,4 +1,4 @@
-package com.ntduc.englishconversation.screen.conversationdetail;
+﻿package com.ntduc.englishconversation.screen.conversationdetail;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
@@ -35,12 +35,6 @@ import com.google.android.exoplayer2.util.Util;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * Created by fs-sournary.
- * Date on 12/27/17.
- * Description:
- */
 
 public class ConversationDetailViewModel extends BaseObservable
         implements ConversationDetailContract.ViewModel {

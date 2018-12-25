@@ -9,12 +9,6 @@ import com.ntduc.englishconversation.BR;
 import com.google.firebase.database.Exclude;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by fs-sournary.
- * Date on 12/7/17.
- * Description:
- */
-
 public class ConversationModel extends BaseObservable implements Parcelable {
 
     public static final Creator<ConversationModel> CREATOR = new Creator<ConversationModel>() {

@@ -8,9 +8,6 @@ import io.reactivex.Observable;
 
 import java.util.List;
 
-/**
- * Created by toand on 5/13/2017.
- */
 
 public class TimelineRepository {
     private TimelineRemoteDataSource mDataSource;

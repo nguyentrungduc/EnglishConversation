@@ -18,9 +18,7 @@ import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
 
 import java.util.List;
 
-/**
- * Created by anh on 12/21/2017.
- */
+
 
 public class CommentAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     private List<Comment> mComments;

@@ -1,4 +1,4 @@
-package com.ntduc.englishconversation.screen.audiodetail;
+﻿package com.ntduc.englishconversation.screen.audiodetail;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
@@ -37,11 +37,7 @@ import com.google.android.exoplayer2.util.Util;
 
 import static com.google.android.exoplayer2.ExoPlayer.STATE_ENDED;
 
-/**
- * Created by fs-sournary.
- * Date on 12/19/17.
- * Description: ViewModel of audio detail screen
- */
+
 
 public class AudioDetailViewModel extends BaseObservable implements AudioDetailContract.View {
 

@@ -5,9 +5,6 @@ import android.databinding.Bindable;
 
 import com.ntduc.englishconversation.BR;
 
-/**
- * Created by doan.van.toan on 1/16/18.
- */
 
 public class Setting extends BaseObservable {
     private boolean mIsEnableAutoPlay;

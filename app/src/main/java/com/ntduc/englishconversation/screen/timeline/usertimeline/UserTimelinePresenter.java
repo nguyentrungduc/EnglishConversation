@@ -20,9 +20,6 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 
-/**
- * Created by doan.van.toan on 2/8/18.
- */
 
 public class UserTimelinePresenter extends TimelinePresenter {
     private UserModel mTimelineUser;

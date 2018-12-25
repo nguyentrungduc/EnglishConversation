@@ -5,9 +5,6 @@ import android.databinding.Bindable;
 import com.google.gson.annotations.SerializedName;
 import com.ntduc.englishconversation.BR;
 
-/**
- * Created by framgia on 16/05/2017.
- */
 
 public class LocationModel extends BaseObservable {
     @SerializedName("lat")

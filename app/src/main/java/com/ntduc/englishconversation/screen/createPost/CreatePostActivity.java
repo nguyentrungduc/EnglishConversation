@@ -17,9 +17,7 @@ import com.ntduc.englishconversation.databinding.ActivityCreatePostBinding;
 import com.ntduc.englishconversation.utils.Blocker;
 import com.ntduc.englishconversation.utils.navigator.Navigator;
 
-/**
- * CreatePost Screen.
- */
+
 public class CreatePostActivity extends BaseActivity {
 
     private CreatePostContract.ViewModel mViewModel;

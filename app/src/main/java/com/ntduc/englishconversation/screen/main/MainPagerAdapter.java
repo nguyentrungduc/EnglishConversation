@@ -9,9 +9,7 @@ import com.ntduc.englishconversation.screen.timeline.hometimeline.HomeTimelineFr
 import com.ntduc.englishconversation.screen.profile.ProfileFragment;
 import com.ntduc.englishconversation.screen.setting.SettingFragment;
 
-/**
- * Created by toand on 5/13/2017.
- */
+
 
 public class MainPagerAdapter extends FragmentStatePagerAdapter {
 

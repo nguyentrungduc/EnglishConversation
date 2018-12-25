@@ -16,9 +16,6 @@ import com.ntduc.englishconversation.screen.BaseViewHolder;
 import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
 import java.util.List;
 
-/**
- * Created by toand on 5/17/2017.
- */
 
 public class TimelineAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 

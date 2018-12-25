@@ -20,11 +20,6 @@ import com.ntduc.englishconversation.screen.basePost.BasePostViewModel;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by fs-sournary.
- * Date on 12/7/17.
- * Description:
- */
 
 public class ConversationAdapter extends
         BaseRecyclerViewAdapter<ConversationAdapter.BaseConversationViewHolder> {

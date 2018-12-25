@@ -15,10 +15,6 @@ import com.ntduc.englishconversation.screen.timeline.TimelineFragment;
 
 import static com.ntduc.englishconversation.utils.Constant.EXTRA_USER;
 
-/**
- * Created by doan.van.toan on 2/8/18.
- */
-
 public class UserTimelineFragment extends TimelineFragment {
 
     public static TimelineFragment newInstance(UserModel userModel) {

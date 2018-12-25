@@ -17,11 +17,7 @@ import com.ntduc.englishconversation.databinding.ItemConversationDetailRightBind
 
 import java.util.List;
 
-/**
- * Created by fs-sournary.
- * Date on 12/27/17.
- * Description:
- */
+
 
 public class ConversationDetailAdapter extends
         BaseRecyclerViewAdapter<ConversationDetailAdapter.BaseConversationViewHolder> {

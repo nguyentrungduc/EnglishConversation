@@ -8,9 +8,6 @@ import android.os.Parcelable;
 import com.android.databinding.library.baseAdapters.BR;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by framgia on 16/05/2017.
- */
 
 public class Comment extends BaseObservable implements Parcelable, Cloneable {
     @SerializedName("id")

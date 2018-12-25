@@ -7,10 +7,6 @@ import java.util.List;
 
 import io.reactivex.Observable;
 
-/**
- * Created by VinhTL on 20/12/2017.
- */
-
 public class CommentRepository implements CommentDataSource {
     private CommentRemoteDataSource mDataSource;
 

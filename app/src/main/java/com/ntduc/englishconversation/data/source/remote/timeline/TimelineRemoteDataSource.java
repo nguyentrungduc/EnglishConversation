@@ -27,9 +27,7 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by toand on 5/13/2017.
- */
+
 
 public class TimelineRemoteDataSource extends BaseFirebaseDataBase implements TimelineDataSource {
     private static final int NUM_OF_TIMELINE_PER_PAGE = 10;

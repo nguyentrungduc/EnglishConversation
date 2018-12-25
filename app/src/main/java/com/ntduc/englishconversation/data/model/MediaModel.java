@@ -15,10 +15,6 @@ import static com.ntduc.englishconversation.data.model.MediaModel.MediaType.IMAG
 import static com.ntduc.englishconversation.data.model.MediaModel.MediaType.ONLY_TEXT;
 import static com.ntduc.englishconversation.data.model.MediaModel.MediaType.VIDEO;
 
-/**
- * Created by framgia on 16/05/2017.
- */
-
 public class MediaModel extends BaseObservable implements Parcelable {
     @SerializedName("id")
     private String mId;

@@ -1,10 +1,6 @@
 package com.ntduc.englishconversation.screen.audiodetail;
 
-/**
- * Created by fs-sournary.
- * Date on 12/19/17.
- * Description:
- */
+
 
 public class AudioDetailPresenter implements AudioDetailContract.Presenter {
 

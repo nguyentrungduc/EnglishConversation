@@ -30,9 +30,7 @@ import static com.ntduc.englishconversation.data.model.Status.ADD;
 import static com.ntduc.englishconversation.data.model.Status.DELETE;
 import static com.ntduc.englishconversation.data.model.Status.EDIT;
 
-/**
- * Created by VinhTL on 20/12/2017.
- */
+
 
 public class CommentRemoteDataSource extends BaseFirebaseDataBase implements CommentDataSource {
     private static final int NUM_OF_COMMENT_PER_PAGE = 15;

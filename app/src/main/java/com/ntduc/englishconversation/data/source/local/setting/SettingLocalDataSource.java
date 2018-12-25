@@ -5,9 +5,6 @@ import com.ntduc.englishconversation.data.source.SettingDataSource;
 import com.ntduc.englishconversation.data.source.local.sharedprf.SharedPrefsApi;
 import com.ntduc.englishconversation.data.source.local.sharedprf.SharedPrefsKey;
 
-/**
- * Created by doan.van.toan on 1/16/18.
- */
 
 public class SettingLocalDataSource implements SettingDataSource {
     private SharedPrefsApi mPrefsApi;
